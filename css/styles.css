@@ -46,6 +46,10 @@ ul {
     list-style: none;
 }
 
+.toggle {
+    display: block;
+}
+
 /* NavBar */
 
 .nav-top {
@@ -90,6 +94,13 @@ ul {
     color: #821cf79c;
 }
 
+.hamburger {
+    display: none;
+    margin-right: 5rem;
+    width: 30px;
+    cursor: pointer;
+}
+
 /* Welcome */
 
 .welcome-hero {
@@ -119,7 +130,7 @@ ul {
 }
 
 .header-text a {
-    padding: 7px 14px;
+    padding: 10px 20px;
     border-radius: 5px;
     color: #fff;
     background: black;
@@ -129,8 +140,7 @@ ul {
 
 .header-text a:hover {
     background: #821cf7;
-    color: #111;
-    padding: 9px 30px;
+    padding: 10px 30px;
 }
 
 /* Section */
@@ -168,7 +178,7 @@ section {
 
 .contact-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .about-left-info .about-top-info {
@@ -177,6 +187,12 @@ section {
 
 .contact-info-self {
     margin-right: 2rem;
+}
+
+.about-right-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-right-info img {
@@ -201,25 +217,6 @@ section {
 
 .size-6 {
     width: 20px;
-}
-
-/* Education */
-
-.education-container {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    width: 50%;
-    font-weight: bold;
-}
-
-.education-sections {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 150px;
-    text-align: center;
 }
 
 /* Skills */
@@ -255,6 +252,10 @@ section {
 }
 
 .experience-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 25%;
 }
 
@@ -266,6 +267,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 8px;
 }
 
 .experience-job-title,

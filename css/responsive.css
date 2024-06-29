@@ -1,18 +1,48 @@
 
 
 @media screen and (max-width:1680px){
-
+    .contact-info {
+        margin-top: 15px;
+    }
 }/*max-width:1680px*/
 
 @media screen and (max-width:1440px){
-    .nav-bar-list .nav {
+    .hamburger {
+        display: block;
+    }
+    .nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: transparent;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+    .nav li {
+        margin: 10px 0;
+    }
+    .nav li a {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 20px;
+    }
+    .nav-bar-brand {
+        margin-left: 5rem;
     }
 }/*max-width:1440px*/
 
-@media screen and (max-width:1199px){
-	
-}/*max-width:1199px*/
+@media screen and (max-width:1350px){
+	.about-top-info {
+        margin-bottom: 8px;
+    }
+}/*max-width:1350px*/
 
 @media screen and (max-width:1024px){
 
@@ -22,13 +52,30 @@
 	
 }/*max-width:1008px*/
 
-@media screen and (max-width:992px){
-	
-}/*max-width:992px*/
+@media screen and (max-width:952px){
+    #about,
+    #skills,
+    #experience,
+    #contact {
+        display: none;
+    }
+    .portfolio-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-items .item {
+        width: 100%;
+    }
+}/*max-width:952px*/
 
-@media screen and (max-width:991px){
-	
-}/*max-width:991px*/
+@media screen and (max-width:850px){
+	.nav-bar-brand {
+        margin-left: .5rem;
+    }
+    .hamburger {
+        margin-right: .5rem;
+    }
+}/*max-width:850px*/
 
 @media screen and (max-width:768px){
     
@@ -47,12 +94,10 @@
 }/*max-width:640px*/
 
 @media screen and (max-width: 580px){
-
+    .header-text {
+        text-align: center;
+    }
 }/*max-width:580px*/
-
-@media screen and (max-width: 540px){
-
-}/*max-width:540px*/
 
 @media screen and (max-width: 480px){
 	

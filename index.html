@@ -5,10 +5,9 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/portfolio/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="/portfolio/css/responsive.css">
     <title>Ajay's Portfolio</title>
-    
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 
 </head>
 
@@ -19,8 +18,13 @@
                 <div class="nav-bar-header">
                     <a href="#" class="nav-bar-brand">PORTFOLIO</a>
                 </div>
-                <div class="nav-bar-list">
-                    <ul class="nav">
+                <div id="nav-bar-list" class="nav-bar-list">
+                    <a class="hamburger-link" onclick="toggleMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburger" id="hamburger">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg> 
+                    </a>                     
+                    <ul class="nav" id="nav">
                         <li><a href="#">About</a></li>
                         <li><a href="#">Education</a></li>
                         <li><a href="#">Skills</a></li>
@@ -33,7 +37,7 @@
     </header>
 
     <div id="welcome-hero" class="welcome-hero">
-        <div class="container">
+        <div class="welcome-container">
             <div class="header-text">
                 <h2>Hi, I am  <br><span>Ajay Sharma</span></h2>
                 <p>Web Developer</p>
@@ -50,24 +54,9 @@
             <div class="about-left-info">
                 <p class="about-top-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos asperiores repellat odio aspernatur vel beatae accusantium fuga aut molestiae in voluptatem, laborum placeat minus unde sed ipsum illo accusamus earum consequuntur eius? A mollitia rerum aut itaque distinctio officiis esse totam soluta sunt. Non officia minima voluptatem consectetur illum reiciendis mollitia minus ab, voluptatibus eum id fugit in, ea sequi!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, corrupti obcaecati ullam architecto debitis eius ipsam corporis commodi, iusto aspernatur inventore! Eum quod voluptates neque veritatis ex commodi, soluta, dolores itaque laudantium exercitationem quaerat dolore molestias eaque hic eos blanditiis.</p>
-                <span class="border-bottom"></span>
-                <div class="contact-info">
-                    <div class="contact-info-self">
-                        <p class="how-to-contact">Phone</p>
-                        <p>720-288-2465</p>
-                    </div>
-                    <div class="contact-info-self">
-                        <p class="how-to-contact">Email</p>
-                        <p>ajayy_sharma@hotmail.com</p>
-                    </div>
-                    <div class="contact-info-self">
-                        <p class="how-to-contact">Website</p>
-                        <p>https://www.linkedin.com/in/aysharma12/.com</p>
-                    </div>
-                </div>
             </div>
             <div class="about-right-info">
-                <img src="./portfolio/imgs/profile-pic.jpg" alt="Headshot picture of myself">
+                <img src="/imgs/profile-pic.jpg" alt="Headshot picture of myself">
                 <div class="headshot-icon-links">
                     <ul class="headshot-icon-list">
                         <li>
@@ -114,25 +103,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="eduction" class="education">
-        <div class="section-header">
-            <h2>Education</h2>
-        </div>
-        <div class="education-container">
-            <div class="education-sections">
-                <p>2013-2015</p>
-                <p>Cherokee Trail High School</p>
-                <p>Aurora, CO</p>
-            </div>
-            <div class="education-sections">
-                <p>2015-2017</p>
-                <p>Springfield High School (Graduated)</p>
-                <p>Springfield, OR</p>
-            </div>
-        </div>
-
     </section>
 
     <section id="skills" class="skills">
@@ -268,10 +238,10 @@
         </div>
         <div class="portfolio-container">
             <div class="portfolio-items">
-                <div class="item"><img src="/portfolio/imgs/IMG_0261.JPG" alt="Project 1"></div>
-                <div class="item"><img src="/portfolio/imgs/IMG_0295.JPG" alt="Project 2"></div>
-                <div class="item"><img src="/portfolio/imgs/IMG_9638.JPG" alt="Project 3"></div>
-                <div class="item"><a href="" target="_blank"><img src="/portfolio/imgs/projects/project1/eCommerceProjectSS.PNG" alt="Project 3"></a></div>
+                <div class="item"><img src="/imgs/IMG_0261.JPG" alt="Project 1"></div>
+                <div class="item"><img src="/imgs/IMG_0295.JPG" alt="Project 2"></div>
+                <div class="item"><img src="/imgs/IMG_9638.JPG" alt="Project 3"></div>
+                <div class="item"><a href="" target="_blank"><img src="/imgs/projects/project1/eCommerceProjectSS.PNG" alt="Project 3"></a></div>
             </div>
         </div>
         <div class="resume-link-container">
@@ -363,11 +333,11 @@
     <div id="resume-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <embed src="/portfolio/imgs/pdf/pdfs/Resume 03_25_24.pdf" type="application/pdf" width="100%" height="1000px">
+            <embed src="/imgs/pdf/pdfs/Resume 03_25_24.pdf" type="application/pdf" width="100%" height="1000px">
         </div>
     </div>
 
-    <script src="/portfolio/js/script.js"></script>
+    <script src="/js/script.js"></script>
     
 </body>
 </html>

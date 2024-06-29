@@ -95,7 +95,7 @@ ul {
 }
 
 .hamburger {
-    display: none;
+    display: block;
     margin-right: 5rem;
     width: 30px;
     cursor: pointer;

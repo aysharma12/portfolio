@@ -57,7 +57,7 @@
     #skills,
     #experience,
     #contact {
-        display: none;
+        display: flex;
     }
     .portfolio-items {
         flex-direction: column;
